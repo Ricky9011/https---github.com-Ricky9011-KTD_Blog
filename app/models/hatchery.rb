@@ -1,0 +1,2 @@
+class Hatchery < ApplicationRecord
+end

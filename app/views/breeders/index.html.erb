@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Breeders</h1>
+
+<div id="breeders">
+  <% @breeders.each do |breeder| %>
+    <%= render breeder %>
+    <p>
+      <%= link_to "Show this breeder", breeder %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New breeder", new_breeder_path %>

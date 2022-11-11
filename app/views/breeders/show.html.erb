@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @breeder %>
+
+<div>
+  <%= link_to "Edit this breeder", edit_breeder_path(@breeder) %> |
+  <%= link_to "Back to breeders", breeders_path %>
+
+  <%= button_to "Destroy this breeder", @breeder, method: :delete %>
+</div>

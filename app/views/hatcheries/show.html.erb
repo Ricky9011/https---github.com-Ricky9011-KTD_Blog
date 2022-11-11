@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @hatchery %>
+
+<div>
+  <%= link_to "Edit this hatchery", edit_hatchery_path(@hatchery) %> |
+  <%= link_to "Back to hatcheries", hatcheries_path %>
+
+  <%= button_to "Destroy this hatchery", @hatchery, method: :delete %>
+</div>

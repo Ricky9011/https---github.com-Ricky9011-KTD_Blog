@@ -1,0 +1,2 @@
+module HatcheriesHelper
+end
