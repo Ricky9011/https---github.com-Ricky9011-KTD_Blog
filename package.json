@@ -1,4 +1,20 @@
 {
   "name": "app",
-  "private": "true"
+  "private": "true",
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.10.1",
+    "sass": "^1.56.1"
+  },
+  "scripts": {
+    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^5.75.0"
+  }
 }
